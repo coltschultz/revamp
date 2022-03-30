@@ -15,20 +15,20 @@
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Southern Star MGA</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item active px-3">
         <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item px-3">
         <a class="nav-link" href="#">Policies</a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown px-3">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Applications
         </a>
@@ -37,7 +37,7 @@
           <a class="dropdown-item" href="#">View Applications</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown px-3">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Endorsements
         </a>
@@ -55,7 +55,7 @@
           <a class="dropdown-item" href="#">Adjust Radius</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown px-3">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Claims
         </a>
@@ -75,17 +75,17 @@
 </nav>
 <!-- Main Container -->
 <main class="container">
-  <div>Driver Profile</div>
+  <div><p class="title">Driver Profile</p></div>
     <div class="row">
         <!-- Driver Profile -->
       <section id="profile" class="col-sm-8">
         <header class="border border-dark text-center">
-          <h1>Driver Name</h1>
-          <h3>US License - A12345678</h3>
+          <h1>Ricardo Lopez-Vera</h1>
+          <h3>US License - TX26508466</h3>
           
         </header>
-        <div id="alerts" class="border border-dark text-center align-middle">
-          <h4 class="alert">There are no alerts for this driver.</h4>
+        <div id="alerts">
+          <p class="button btn-success">There are no alerts for this driver.</p>
         </div>
         <!-- Begin Accordion -->
         <div class="accordion" id="accordionExample">
@@ -100,7 +100,54 @@
             
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <!-- Primary Information Table -->
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col" colspan="2">Primary Information</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Name:</th>
+                        <td>Ricardo Lopez-Vera</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">DOB:</th>
+                        <td>07/01/1987</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Country</th>
+                        <td>United States</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- Secondary Information Table -->
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col" colspan="2">Secondary Information</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">License State:</th>
+                        <td>TX</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">License #:</th>
+                        <td>26508466</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Orig. Issue:</th>
+                        <td>12/31/2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Expires:</th>
+                        <td>07/01/2029</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
                 </div>
             </div>
@@ -108,13 +155,25 @@
                 <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Motor Vehicle Report
+                    Driver Documents
                     </button>
                 </h5>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Select a Document
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Driver's License - Back</a>
+                      <a class="dropdown-item" href="#">Driver's License - Front</a>
+                    </div>
+                  </div>
+                  <p></p>
+                  <h6>Driver's License - Front:</h6>
+                    <img src="license.png" class="license zoom">
+                  
                 </div>
                 </div>
             </div>
@@ -122,7 +181,7 @@
                 <div class="card-header" id="headingThree">
                 <h5 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Driver Coverage
+                    Motor Vehicle Report
                     </button>
                 </h5>
                 </div>
@@ -132,6 +191,20 @@
                 </div>
                 </div>
             </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                    Driver Coverage
+                  </button>
+              </h5>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+              </div>
+          </div>
         </div>
         <!-- End Acccordion -->
       </section>
@@ -139,7 +212,15 @@
       <section id="history" class="col-sm">
         <header class="border border-dark text-center"><h2>Driver History</h2></header>
         <section id="historyList" class="border border-dark text-center">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success">Driver was added to ABC Trucking</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success">Driver was added to XYZ Trucking</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Driver was removed from DEF Trucking</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success">Driver was added to DEF Trucking</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Driver was removed from GHI Trucking</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success">Driver was added to GHI Trucking</a>
 
+          </div>
         </section>
       </section>
     </div>

@@ -9,9 +9,39 @@ header {
 }
 
 #alerts {
-  margin-bottom: 10px;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.alert {
+  color: green;
 }
 
 #historyList {
-  height: 80%;
+}
+
+.license {
+  max-width: 400px;
+}
+
+table td {
+  width: 500px;
+}
+
+.title {
+  margin-top: 15px;
+}
+
+.zoom {
+  background-color: green;
+  transition: transform 0.2s; /* Animation */
+  margin: 0 auto;
+  position: relative;
+}
+
+.zoom:hover {
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
