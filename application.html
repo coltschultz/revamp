@@ -79,9 +79,9 @@
     <div class="row">
         <!-- Driver Profile -->
       <section id="profile" class="col-sm-8">
-        <div><p class="title">Driver Profile for Ricardo Lopez-Vera </p></div>
+        <div><p class="title">Unsubmitted Application for Ricardo Lopez-Vera </p></div>
         <div id="alerts">
-          <p class="button btn-success">There are no alerts for this driver.</p>
+          <p class="button btn-success">There are no alerts for this insured.</p>
         </div>
         <!-- Begin Accordion -->
         <div class="accordion" id="accordionExample">
@@ -89,8 +89,9 @@
                 <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Driver Information
-                    <i class="bi bi-chevron-double-down"></i>                </h5>
+                    Insured's Information
+                    <i class="bi bi-chevron-double-down"></i>          
+                </h5>
                 </div>
             
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -104,16 +105,20 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">Name:</th>
-                        <td>Ricardo Lopez-Vera</td>
+                        <th scope="row">Named Insured:</th>
+                        <td>ABC Trucking</td>
                       </tr>
                       <tr>
-                        <th scope="row">DOB:</th>
-                        <td>07/01/1987</td>
+                        <th scope="row">DOT:</th>
+                        <td>234567</td>
                       </tr>
                       <tr>
-                        <th scope="row">Country</th>
-                        <td>United States</td>
+                        <th scope="row">MC</th>
+                        <td>123456789</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Home State</th>
+                        <td>Texas</td>
                       </tr>
                     </tbody>
                   </table>
@@ -126,20 +131,28 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">License State:</th>
+                        <th scope="row">Address:</th>
                         <td>TX</td>
                       </tr>
                       <tr>
-                        <th scope="row">License #:</th>
-                        <td>26508466</td>
+                        <th scope="row">Phone:</th>
+                        <td>210-555-5555</td>
                       </tr>
                       <tr>
-                        <th scope="row">Orig. Issue:</th>
-                        <td>12/31/2020</td>
+                        <th scope="row">Contact Name:</th>
+                        <td><a href="#">Elmer Fudd</a></td>
                       </tr>
                       <tr>
-                        <th scope="row">Expires:</th>
-                        <td>07/01/2029</td>
+                        <th scope="row">Contact Email:</th>
+                        <td><a href="#">e.fudd@abctrucking.com</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Safety Officer Name:</th>
+                        <td><a href="#">d.duck@abctrucking.com</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Safety Officer Email:</th>
+                        <td><a href="#">d.duck@abctrucking.com</a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -150,26 +163,44 @@
                 <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Driver Documents
+                    Power Units
                     <i class="bi bi-chevron-double-down"></i>
                     </button>
                 </h5>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Select a Document
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Driver's License - Back</a>
-                      <a class="dropdown-item" href="#">Driver's License - Front</a>
-                    </div>
-                  </div>
-                  <p></p>
-                  <h6>Driver's License - Front:</h6>
-                    <img src="license.png" class="license zoom">
-                  
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">VIN</th>
+                            <th scope="col">Year</th>
+                            <th scope="col">Make</th>
+                            <th scope="col">Model</th>
+                            <th scope="col">Weight</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>3WKYD49X1MF520473</td>
+                            <td>2021</td>
+                            <td>Kenworth</td>
+                            <td>Tractor</td>
+                            <td>> 45,000 lbs</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>3WKYD49X1MF520474</td>
+                            <td>2022</td>
+                            <td>Kenworth</td>
+                            <td>Tractor</td>
+                            <td>> 45,000 lbs</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      
                 </div>
                 </div>
             </div>
@@ -177,59 +208,40 @@
                 <div class="card-header" id="headingThree">
                 <h5 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Motor Vehicle Report
+                    Drivers
                     <i class="bi bi-chevron-double-down"></i>
                     </button>
                 </h5>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
-                                    <!-- Secondary Information Table -->
-                                    <table class="table table-striped">
-                                      <thead>
-                                        <tr>
-                                          <th scope="col" colspan="2">As of 03/29/2022:</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        <tr>
-                                          <th scope="row">Name:</th>
-                                          <td>Ricardo Lopez-Vera <span class="button btn-success match">Exact Match</span></td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">DOB:</th>
-                                          <td>07/01/1987 <span class="button btn-success match">Exact Match</span></td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">License #:</th>
-                                          <td>26508466 <span class="button btn-success match">Exact Match</span></td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">DL Status:</th>
-                                          <td>Valid</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">DL Type:</th>
-                                          <td>Commercial</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Orig. Issue:</th>
-                                          <td>12/31/2020</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Expires:</th>
-                                          <td>07/01/2029</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Infractions:</th>
-                                          <td>No infractions to display.</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Accidents:</th>
-                                          <td>No accidents to display.</td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">License</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">View</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>3WKYD49X1MF520473</td>
+                            <td>2021</td>
+                            <td>Kenworth</td>
+                            <td>Tractor</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>3WKYD49X1MF520474</td>
+                            <td>2022</td>
+                            <td>Kenworth</td>
+                            <td>Tractor</td>
+                          </tr>
+                        </tbody>
+                      </table>
                 </div>
                 </div>
             </div>
