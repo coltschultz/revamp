@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 header {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -20,14 +28,15 @@ header {
 
 #history {
   margin-top: 15px;
+  height: 100%;
+}
+
+#historyList {
+  height: 100%;
 }
 
 .license {
   max-width: 400px;
-}
-
-table td {
-  width: 500px;
 }
 
 .title {
@@ -72,6 +81,10 @@ table td {
 
 .scrollx {
   overflow-x: auto;
+}
+
+.driverForm {
+  width: 100%;
 }
 
 .bi-chevron-double-down {

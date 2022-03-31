@@ -79,7 +79,7 @@
     <div class="row">
         <!-- Driver Profile -->
       <section id="profile" class="col-sm-8">
-        <div><p class="title">Unsubmitted Application for Ricardo Lopez-Vera </p></div>
+        <div><p class="title">Unsubmitted Application for ABC Trucking </p></div>
         <div id="alerts">
           <p class="button btn-success">There are no alerts for this insured.</p>
         </div>
@@ -177,8 +177,8 @@
                             <th scope="col">VIN</th>
                             <th scope="col">Year</th>
                             <th scope="col">Make</th>
-                            <th scope="col">Model</th>
                             <th scope="col">Weight</th>
+                            <th scope="col">    </th>
                           </tr>
                         </thead>
                         <tbody>
@@ -187,16 +187,16 @@
                             <td>3WKYD49X1MF520473</td>
                             <td>2021</td>
                             <td>Kenworth</td>
-                            <td>Tractor</td>
                             <td>> 45,000 lbs</td>
+                            <td><span class="button btn-danger match">REMOVE</span></td>
                           </tr>
                           <tr>
                             <th scope="row">2</th>
                             <td>3WKYD49X1MF520474</td>
                             <td>2022</td>
                             <td>Kenworth</td>
-                            <td>Tractor</td>
                             <td>> 45,000 lbs</td>
+                            <td><span class="button btn-danger match">REMOVE</span></td>
                           </tr>
                         </tbody>
                       </table>
@@ -215,30 +215,92 @@
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
-                    <table class="table table-striped">
+                    <!-- Begin Add Driver -->
+                    <div class="accordion" id="accordionAddDriver">
+                        <div class="card">
+                        <div class="card-header" id="headingAddDriver">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseAddDriver" aria-expanded="true" aria-controls="collapseAddDriver">
+                                Add A Driver
+                                <i class="bi bi-chevron-double-down"></i>
+                            </button>
+                            </h2>
+                        </div>
+                    
+                        <div id="collapseAddDriver" class="collapse" aria-labelledby="headingAddDriver" data-parent="#accordionAddDriver">
+                            <div class="card-body">
+                            <table class="table table-striped table-sm">
+                                <tbody>
+                                    <form>
+                                    <tr>
+                                        <th scope="row">Name:</th>
+                                        <td><input type="text" class="driverForm" id="driverName" placeholder="First & Last Name"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">DOB:</th>
+                                        <td><input type="text" class="driverForm" id="driverDob" placeholder="MM/DD/YYYY"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Country:</th>
+                                        <td><input type="text" class="driverForm" id="driverCountry" placeholder="US, Mexico, or Canada"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">License State:</th>
+                                        <td><input type="text" class="driverForm" id="driverState" placeholder=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">License Number:</th>
+                                        <td><input type="text" class="driverForm" id="driverLicenseNumber" placeholder=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">NMP:</th>
+                                        <td><input type="text" class="driverForm" id="driverName" placeholder="If Applicable"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Copy of DL:</th>
+                                        <td>
+                                            <button class="btn btn-secondary addDriver" type="button" id="driverSubmit">
+                                                Upload License
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" colspan="2">
+
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" colspan="2">
+                                            <button class="btn btn-success addDriver" type="button" id="driverSubmit">
+                                                Submit Driver
+                                            </button>
+                                        </th>
+                                    </tr>
+                                    </form>
+                    
+                                </tbody>
+                                </table>      </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- End Add Driver -->
+                    <table class="table table-striped table-sm">
                         <thead>
                           <tr>
                             <th scope="col">#</th>
                             <th scope="col">Name</th>
                             <th scope="col">License</th>
-                            <th scope="col">Age</th>
+                            <th scope="col">DOB</th>
                             <th scope="col">View</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <th scope="row">1</th>
-                            <td>3WKYD49X1MF520473</td>
-                            <td>2021</td>
-                            <td>Kenworth</td>
-                            <td>Tractor</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>3WKYD49X1MF520474</td>
-                            <td>2022</td>
-                            <td>Kenworth</td>
-                            <td>Tractor</td>
+                            <td><a href="driver-profile.html">Ricardo Lopez-Vera</a></td>
+                            <td>TX26508466</td>
+                            <td>07/01/1987</td>
+                            <td><span class="button btn-success match">MVR</span> <span class="button btn-secondary match">License</span> <span class="button btn-danger match">REMOVE</span></td>
                           </tr>
                         </tbody>
                       </table>
@@ -249,7 +311,7 @@
               <div class="card-header" id="headingFour">
               <h5 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
-                    Driver Coverage <i class="bi bi-chevron-double-down"></i>
+                    Underwriting Questionnaire <i class="bi bi-chevron-double-down"></i>
                   </button>
               </h5>
               </div>
@@ -259,7 +321,7 @@
                   <table class="table table-striped">
                     <thead>
                       <tr>
-                        <th scope="col" colspan="3">Coverage Active With:</th>
+                        <th scope="col" colspan="3">Underwriting Questionnaire</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -303,31 +365,107 @@
         </div>
         <!-- End Acccordion -->
       </section>
-        <!-- Driver History -->
+        <!-- Document Upload -->
       <section id="history" class="col-sm">
-        <div class="accordion" id="accordionExample">
+        <div class="accordion" id="accordionHistory">
           <div class="card">
-            <div class="card-header" id="headingFive">
+            <div class="card-header" id="headingPremium">
               <h5 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                  Driver History
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsePremium" aria-expanded="true" aria-controls="collapsePremium">
+                  Premium:
                   <i class="bi bi-chevron-double-down"></i>
                 </button>
               </h5>
             </div>
         
-            <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div id="collapsePremium" class="collapse show" aria-labelledby="headingPremium" data-parent="#accordionHistory">
+              <div class="card-body">
+                  <div class="row">
+                      <div class="col">
+                        GWP
+                      </div>
+                      <div class="col">
+                        $0.00
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                        Surplus Lines Tax
+                    </div>
+                    <div class="col">
+                        $0.00
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Stamping Fee
+                    </div>
+                    <div class="col">
+                        $0.00
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Processing Fee
+                    </div>
+                    <div class="col">
+                        $0.00
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Other Fees
+                    </div>
+                    <div class="col">
+                        $0.00
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col font-weight-bold">
+                        Total Due
+                    </div>
+                    <div class="col font-weight-bold">
+                        $0.00
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                  Documents
+                  <i class="bi bi-chevron-double-down"></i>
+                </button>
+              </h5>
+            </div>
+        
+            <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionHistory">
               <div class="card-body">
                   <section id="historyList" class="text-center">
                       <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">Driver was added to ABC Trucking</a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">Driver was added to XYZ Trucking</a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Driver was removed from DEF Trucking</a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">Driver was added to DEF Trucking</a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Driver was removed from GHI Trucking</a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">Driver was added to GHI Trucking</a>
-            
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle addDriver" type="button" id="policyDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Replace A Document
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="policyDrop">
+                              <a class="dropdown-item" href="#">Loss Runs</a>
+                              <a class="dropdown-item" href="#">Safer Reports</a>
+                            </div>
+                          </div>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Upload Loss Runs</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Upload Safer Report</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Upload CAB Report</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">View IFTA</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">View Driver's List</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">View Power Units List</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Upload Loss Runs</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Upload Misc Documents</a>
                       </div>
+
+
                     </section>
               </div>
             </div>
