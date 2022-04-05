@@ -77,252 +77,152 @@
 <main class="container">
   
     <div class="row">
-        <!-- Driver Profile -->
-      <section id="profile" class="col-sm-8">
-        <div><p class="title">Driver Profile for Ricardo Lopez-Vera </p></div>
-        <div id="alerts">
-          <p class="button btn-success">There are no alerts for this driver.</p>
-        </div>
-        <!-- Begin Accordion -->
-        <div class="accordion" id="accordionExample">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Driver Information
-                    <i class="bi bi-chevron-double-down"></i>                </h5>
-                </div>
-            
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  <!-- Primary Information Table -->
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th scope="col" colspan="2">Primary Information</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">Name:</th>
-                        <td>Ricardo Lopez-Vera</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">DOB:</th>
-                        <td>07/01/1987</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Country</th>
-                        <td>United States</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <!-- Secondary Information Table -->
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th scope="col" colspan="2">Secondary Information</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">License State:</th>
-                        <td>TX</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">License #:</th>
-                        <td>26508466</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Orig. Issue:</th>
-                        <td>12/31/2020</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Expires:</th>
-                        <td>07/01/2029</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Driver Documents
-                    <i class="bi bi-chevron-double-down"></i>
-                    </button>
-                </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Select a Document
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Driver's License - Back</a>
-                      <a class="dropdown-item" href="#">Driver's License - Front</a>
-                    </div>
-                  </div>
-                  <p></p>
-                  <h6>Driver's License - Front:</h6>
-                    <img src="license.png" class="license zoom">
-                  
-                </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Motor Vehicle Report
-                    <i class="bi bi-chevron-double-down"></i>
-                    </button>
-                </h5>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                                    <!-- Secondary Information Table -->
-                                    <table class="table table-striped">
-                                      <thead>
-                                        <tr>
-                                          <th scope="col" colspan="2">As of 03/29/2022:</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        <tr>
-                                          <th scope="row">Name:</th>
-                                          <td>Ricardo Lopez-Vera <span class="button btn-success match">Exact Match</span></td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">DOB:</th>
-                                          <td>07/01/1987 <span class="button btn-success match">Exact Match</span></td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">License #:</th>
-                                          <td>26508466 <span class="button btn-success match">Exact Match</span></td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">DL Status:</th>
-                                          <td>Valid</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">DL Type:</th>
-                                          <td>Commercial</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Orig. Issue:</th>
-                                          <td>12/31/2020</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Expires:</th>
-                                          <td>07/01/2029</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Infractions:</th>
-                                          <td>No infractions to display.</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Accidents:</th>
-                                          <td>No accidents to display.</td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                </div>
-                </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingFour">
-              <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
-                    Driver Coverage <i class="bi bi-chevron-double-down"></i>
-                  </button>
-              </h5>
-              </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-              <div class="card-body">
-                  <!-- Secondary Information Table -->
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th scope="col" colspan="3">Coverage Active With:</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row" class="policyName">XYZ Trucking</th>
-                        <td>2-SSM-TX-19-S0100124-00</td>
-                        <td><button class="button btn-danger match">Remove Driver</button></td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="policyName">ABC Trucking</th>
-                        <td class="policyData">2-SSM-TX-19-S0100124-00</td>
-                        <td class="removeButton"><button class="button btn-danger match">Remove Driver</button></td>
-
-                      </tr>
-                    </tbody>
-                  </table>
-                  
-                      <h3>Add Driver</h3>
-                      <label for="policyDrop">Select a Policy</label>
-                      <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle addDriver" type="button" id="policyDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Choose a Policy
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="policyDrop">
-                          <a class="dropdown-item" href="#">TUV Trucking:	2-SSM-TX-19-S0100124-00</a>
-                          <a class="dropdown-item" href="#">MNO Trucking:	2-SSM-TX-19-S0100124-00</a>
-                        </div>
-                      </div>
-                      <button class="btn btn-secondary dropdown-toggle addDriver" type="button" id="policyDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select an Effective Date
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="policyDrop">
-                        <a class="dropdown-item" href="#"></a>
-                      </div>
-                      <button class="btn btn-success addDriver" type="button" id="driverSubmit">
-                        Submit Add Driver Endorsement
-                      </button>
-              </div>
-              </div>
-          </div>
-        </div>
-        <!-- End Acccordion -->
-      </section>
-        <!-- Driver History -->
-      <section id="history" class="col-sm">
-        <div class="accordion" id="accordionExample">
+       <!-- Sidebar -->
+       <section id="history" class="col-sm">
+        <div class="accordion" id="accordionHistory">
           <div class="card">
-            <div class="card-header" id="headingFive">
+            <div class="card-header" id="headingPremium">
               <h5 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                  Driver History
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsePremium" aria-expanded="true" aria-controls="collapsePremium">
+                  Urgent Items:
                   <i class="bi bi-chevron-double-down"></i>
                 </button>
               </h5>
             </div>
         
-            <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div id="collapsePremium" class="collapse show" aria-labelledby="headingPremium" data-parent="#accordionHistory">
+              <div class="card-body">
+                <div class="list-group">
+                <a href="#" class="mb-1 list-group-item list-group-item-action list-group-item-danger">Urgent Document Request</a>
+                <a href="#" class="mb-1 list-group-item list-group-item-action list-group-item-danger">Less than 3 days remaining on 1 renewal</a>
+                <a href="#" class="mb-1 list-group-item list-group-item-action list-group-item-danger">Less than 5 days remaining on 4 renewals</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                  Notifications
+                  <i class="bi bi-chevron-double-down"></i>
+                </button>
+              </h5>
+            </div>
+        
+            <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionHistory">
               <div class="card-body">
                   <section id="historyList" class="text-center">
                       <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">Driver was added to ABC Trucking</a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">Driver was added to XYZ Trucking</a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Driver was removed from DEF Trucking</a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">Driver was added to DEF Trucking</a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Driver was removed from GHI Trucking</a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">Driver was added to GHI Trucking</a>
-            
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary mb-1 small">Your application for ABC Trucking was Issued</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary mb-1 small">Your application for ABC Trucking was Approved</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary mb-1 small">You submitted an application for ABC Trucking</a>
                       </div>
+
+
                     </section>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </div>
+      <!-- Dashboard -->
+      <section id="profile" class="col-sm-8">
+        <div class="card mb-2">
+          <div class="card-header text-center" id="headingOne">
+            <h2 class="mb-0">
+                Agent Dashboard
+            </h2>
+          </div>
+        </div>
+        <!-- Quick Access -->
+          <div class="card mb-2">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Quick Access
+                </button>
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#quickLinkAcc">
+              <div class="card-body">
+                <!-- Begin Quick Access Links -->
+                <div class="d-flex flex-wrap justify-content-center">
+                  <article class="card quick">
+                    <div class="card-header text-center">
+                      <h1><i class="bi bi-skip-backward-circle-fill"></i></h1>
+                      Return To Last Edit
+                    </div>
+                  </article>
+                  <article class="card quick">
+                    <div class="card-header text-center">
+                      <h1><i class="bi bi-hourglass-split"></i></h1>
+                      Waiting On You
+                    </div>
+                  </article>
+                  <article class="card quick">
+                    <div class="card-header text-center">
+                      <h1><i class="bi bi-eye-fill"></i></h1>
+                      Recently Viewed
+                    </div>
+                  </article>
+                  <article class="card quick">
+                    <div class="card-header text-center">
+                      <h1><i class="bi bi-patch-exclamation-fill"></i></h1>
+                      Upcoming Renewals
+                    </div>
+                  </article>
+                </div>
+                <!-- End Quick Access Links -->
+
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card mb-2">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  My Pending Items
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#quickLinkMy">
+              <div class="card-body">
+                <!-- Begin Pending Items Table -->
+                  <table class="table table-striped table-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">Status</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><button class="button btn-warning match status">Processing</button></th>
+                        <td><a href="driver-profile.html">Add Driver Endorsement</a></td>
+                        <td>Submitted, Awaiting Underwriting</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><button class="button btn-danger match status">Incomplete</button></th>
+                        <td><a href="driver-profile.html">Application for DEF Trucking</a></td>
+                        <td>Unsubmitted, 75% Complete</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                <!-- End Pending Items Table -->
+              </div>
+            </div>
+          </div>
+      </section>
+
+     
+
+    
 </main>
 </body>
 </html>
