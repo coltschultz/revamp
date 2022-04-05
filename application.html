@@ -14,16 +14,16 @@
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Southern Star MGA</a>
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand">Southern Star MGA</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active px-3">
-        <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item px-3">
         <a class="nav-link" href="#">Policies</a>
@@ -80,9 +80,7 @@
         <!-- Driver Profile -->
       <section id="profile" class="col-sm-8">
         <div><p class="title">Unsubmitted Application for ABC Trucking </p></div>
-        <div id="alerts">
-          <p class="button btn-success">There are no alerts for this insured.</p>
-        </div>
+        <div class="alert text-center font-weight-bold">There are no alerts for this insured.</div>
         <!-- Begin Accordion -->
         <div class="accordion" id="accordionExample">
             <div class="card">
@@ -95,7 +93,7 @@
                 </div>
             
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
+                <div class="card-body bg-white">
                   <!-- Primary Information Table -->
                   <table class="table table-striped">
                     <thead>
@@ -169,7 +167,7 @@
                 </h5>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
+                <div class="card-body bg-white">
                     <table class="table table-striped">
                         <thead>
                           <tr>
@@ -188,7 +186,7 @@
                             <td>2021</td>
                             <td>Kenworth</td>
                             <td>> 45,000 lbs</td>
-                            <td><span class="button btn-danger match">REMOVE</span></td>
+                            <td><span class="button btn-danger small p-1">REMOVE</span></td>
                           </tr>
                           <tr>
                             <th scope="row">2</th>
@@ -196,7 +194,7 @@
                             <td>2022</td>
                             <td>Kenworth</td>
                             <td>> 45,000 lbs</td>
-                            <td><span class="button btn-danger match">REMOVE</span></td>
+                            <td><span class="button btn-danger small p-1">REMOVE</span></td>
                           </tr>
                         </tbody>
                       </table>
@@ -204,7 +202,7 @@
                 </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card bg-white">
                 <div class="card-header" id="headingThree">
                 <h5 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -214,7 +212,7 @@
                 </h5>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
+                <div class="card-body  bg-white">
                     <!-- Begin Add Driver -->
                     <div class="accordion" id="accordionAddDriver">
                         <div class="card">
@@ -300,7 +298,7 @@
                             <td><a href="driver-profile.html">Ricardo Lopez-Vera</a></td>
                             <td>TX26508466</td>
                             <td>07/01/1987</td>
-                            <td><span class="button btn-success match">MVR</span> <span class="button btn-secondary match">License</span> <span class="button btn-danger match">REMOVE</span></td>
+                            <td><span class="button btn-success small p-1">MVR</span> <span class="button btn-secondary small p-1">License</span> <span class="button btn-danger small p-1">REMOVE</span></td>
                           </tr>
                         </tbody>
                       </table>
