@@ -80,7 +80,6 @@ body {
 
 .card-body {
   /* background-color: #CCCDC6; */
-  border-radius: 0;
 }
 
 .btn-link {
@@ -101,26 +100,6 @@ body {
 .quick2 {
   width: 310px;
   margin: 5px;
-}
-
-.quickCard {
-  width: 150px;
-  height: 100px;
-  background-color: #072a48;
-  color: white;
-  margin: 10px;
-  margin-bottom: 40px;
-}
-
-.quickCard2 {
-  padding: 20px;
-  padding-bottom: 110px;
-  width: 310 px;
-  height: 100px;
-  background-color: #072a48;
-  color: white;
-  margin: 10px;
-  margin-bottom: 40px;
 }
 
 .status {

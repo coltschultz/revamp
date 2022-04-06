@@ -87,96 +87,49 @@
 
 <!-- Main Container -->
 <main>
-<!-- Urgent Items -->
-<section class="row justify-content-center">
-  <div class="col-11">
-  <div class="card mb-4">
-    <div class="dashHeader2" id="headingPremium">
-      <h5 class="mb-0">
-        <h4>
-          System Alerts:
-        </h4>
-      </h5>
-    </div>
-
-    <div id="collapsePremium" class="collapse show" aria-labelledby="headingPremium" data-parent="#accordionHistory">
-      <div class="card-body bg-white">
-        <div class="list-group">
-        <a href="#" class="mb-1 list-group-item list-group-item-action list-group-item-danger">
-          
-          Urgent Document Request
-        </a>
-        <a href="#" class="mb-1 list-group-item list-group-item-action list-group-item-danger">
-          Less than 3 days remaining on 1 renewal
-        </a>
-        <a href="#" class="mb-1 list-group-item list-group-item-action list-group-item-danger">
-          Less than 5 days remaining on 4 renewals
-        </a>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  <div class="card mb-4">
-    <div class="dashHeader2" id="headingOne">
-      <h2 class="mb-0">
-        <h4>
-         My Pending Items:
-        </h4>
-      </h2>
-    </div>
-    <!-- Begin Pending Items Table -->
-    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#quickLinkMy">
-      <div class="card-body">
-          <table class="table table-striped table-sm">
-            <thead>
-              <tr>
-                <th scope="col">Status</th>
-                <th scope="col">Type</th>
-                <th scope="col">Details</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row"><button class="button btn-warning match status">Processing</button></th>
-                <td><a href="driver-profile.html">Add Driver for TUV Trucking</a></td>
-                <td>Submitted, Awaiting Underwriting</td>
-              </tr>
-              <tr>
-                <th scope="row"><button class="button btn-danger match status">Incomplete</button></th>
-                <td><a href="driver-profile.html">Application for DEF Trucking</a></td>
-                <td>Unsubmitted, 75% Complete</td>
-              </tr>
-              <tr>
-                <th scope="row"><button class="button btn-warning match status">Processing</button></th>
-                <td><a href="application.html">Application for ABC Trucking</a></td>
-                <td>Submitted, Awaiting Underwriting</td>
-              </tr>
-            </tbody>
-          </table>
-      </div>
-    </div>
-  </div>
-  <!-- End Pending Items Table -->
-</div>
-</section>
-
   <!-- Sidebar -->
     <div class="row d-flex justify-content-center" >
       <section id="history" class="col-md-8 col-lg-3">
         <div class="card mb-4">
-          <div class="dashHeader2" id="headingPremium">
+          <div class="card-header" id="headingPremium">
             <h5 class="mb-0">
               <h4>
-                To Do List
+                Urgent Items:
               </h4>
             </h5>
           </div>
+      
+          <div id="collapsePremium" class="collapse show" aria-labelledby="headingPremium" data-parent="#accordionHistory">
+            <div class="card-body bg-secondary">
+              <div class="list-group">
+              <a href="#" class="mb-1 list-group-item list-group-item-action list-group-item-danger">
+                
+                Urgent Document Request
+              </a>
+              <a href="#" class="mb-1 list-group-item list-group-item-action list-group-item-danger">
+                Less than 3 days remaining on 1 renewal
+              </a>
+              <a href="#" class="mb-1 list-group-item list-group-item-action list-group-item-danger">
+                Less than 5 days remaining on 4 renewals
+              </a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-header" id="headingPremium">
+            <h5 class="mb-0">
+              <h4>
+                To Do List:
+              </h4>
+            </h5>
+          </div>
+      
           <div id="collapsePremium" class="collapse show" aria-labelledby="headingPremium" data-parent="#accordionHistory">
             <div class="card-body">
               <div class="list-group">
-                <input type="text" class="mb-2" placeholder=" New To Do Item"/> 
-                <button class="button btn-success rounded mb-2">Add Item To Your List</button>
+                <button class="button btn-success rounded mb-2">Add An Item To Your List</button>
                 <button class="button btn-warning rounded mb-2">Add An Item To A Colleague's List</button>
               <a href="#" class="mb-1 list-group-item list-group-item-action list-group-item-secondary">
                 <input type="checkbox" class="large">
@@ -199,11 +152,107 @@
           
       </section>
       <!-- Dashboard -->
-  
+      <section id="profile" class="col-md-8 col-lg-6 h-100">
+        <div class="card mb-4">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <h4>
+               My Pending Items
+              </h4>
+            </h2>
+          </div>
+          <!-- Begin Pending Items Table -->
+          <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#quickLinkMy">
+            <div class="card-body">
+                <table class="table table-striped table-sm">
+                  <thead>
+                    <tr>
+                      <th scope="col">Status</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Details</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"><button class="button btn-warning match status">Processing</button></th>
+                      <td><a href="driver-profile.html">Add Driver for TUV Trucking</a></td>
+                      <td>Submitted, Awaiting Underwriting</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><button class="button btn-danger match status">Incomplete</button></th>
+                      <td><a href="driver-profile.html">Application for DEF Trucking</a></td>
+                      <td>Unsubmitted, 75% Complete</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><button class="button btn-warning match status">Processing</button></th>
+                      <td><a href="application.html">Application for ABC Trucking</a></td>
+                      <td>Submitted, Awaiting Underwriting</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+        <!-- End Pending Items Table -->
+        <!-- Quick Access -->
+          <div class="card mb-4">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <h4>
+                  Quick Access
+                </h4>
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#quickLinkAcc">
+              <div class="card-body">
+                <!-- Begin Quick Access Links -->
+                <div class="d-flex flex-wrap justify-content-center">
+                  <article class="card quick">
+                    <div class="card-header text-center">
+                      <h1><i class="bi bi-skip-backward-circle-fill"></i></h1>
+                      Return To Last Edit
+                    </div>
+                  </article>
+                  <article class="card quick">
+                    <div class="card-header text-center">
+                      <h1><i class="bi bi-hourglass-split"></i></h1>
+                      Items Waiting On You
+                    </div>
+                  </article>
+                  <article class="card quick">
+                    <div class="card-header text-center">
+                      <h1><i class="bi bi-eye-fill"></i></h1>
+                      Recently Viewed
+                    </div>
+                  </article>
+                  <article class="card quick">
+                    <div class="card-header text-center">
+                      <h1><i class="bi bi-patch-exclamation-fill"></i></h1>
+                      Upcoming Renewals
+                    </div>
+                  </article>
+                  <article class="card quick">
+                    <div class="card-header text-center">
+                      <h1><i class="bi bi-alarm-fill"></i></h1>
+                      Notices of Cancellation
+                    </div>
+                  </article>
+                  <article class="card quick">
+                    <div class="card-header text-center">
+                      <h1><i class="bi bi-currency-exchange"></i></h1>
+                      Notices of Financed Prem.
+                    </div>
+                  </article>
+                </div>
+                <!-- End Quick Access Links -->
+              </div>
+            </div>
+          </div>
+      </section>
 
-     <section class="col-lg-3 col-md-8">
+     <section class="col-lg-2 col-md-8">
       <div class="card h-100">
-        <div class="dashHeader2" id="headingFive">
+        <div class="card-header" id="headingFive">
           <h5 class="mb-0">
             <h4>
               Notifications
@@ -211,10 +260,10 @@
           </h5>
         </div>
     
-        <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionHistory">
-          <div class="card-body h-100 w-100 p-1 m-0">
-              <section id="historyList" class="text-center w-100">
-                  <div class="list-group w-100">
+        <div id="collapseFive" class="collapse show h-100" aria-labelledby="headingFive" data-parent="#accordionHistory">
+          <div class="card-body bg-secondary h-100 w-100 p-1 m-0">
+              <section id="historyList" class="text-center w-100 h-100">
+                  <div class="list-group w-100 h-100">
                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary mb-1 small">Your application for ABC Trucking was Issued</a>
                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary mb-1 small">Your application for ABC Trucking was Approved</a>
                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary mb-1 small">You submitted an application for ABC Trucking</a>
@@ -226,66 +275,7 @@
           </div>
         </div>
       </div>
-      
      </section>
-     <section id="profile" class="col-md-8 col-lg-5 h-100">
-        
-      <!-- Quick Access -->
-        <div class="card mb-4">
-          <!-- <div class="dashHeader" id="headingOne">
-            <h2 class="mb-0">
-              <h5>
-                Quick Access
-              </h5>
-            </h2>
-          </div> -->
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#quickLinkAcc">
-            <div class="card-body">
-              <!-- Begin Quick Access Links -->
-              <div class="d-flex flex-wrap justify-content-center">
-                <article class="quickCard">
-                  <div class="card-header text-center">
-                    <h1><i class="bi bi-skip-backward-circle-fill"></i></h1>
-                    Return To Last Edit
-                  </div>
-                </article>
-                <article class="quickCard2">
-                  <div class="text-center">
-                    <h1><i class="bi bi-hourglass-split"></i></h1>
-                    Items Waiting On You
-                  </div>
-                </article>
-                <article class="quickCard">
-                  <div class="card-header text-center">
-                    <h1><i class="bi bi-eye-fill"></i></h1>
-                    Recently Viewed
-                  </div>
-                </article>
-                <article class="quickCard">
-                  <div class="card-header text-center">
-                    <h1><i class="bi bi-patch-exclamation-fill"></i></h1>
-                    Upcoming Renewals
-                  </div>
-                </article>
-                <article class="quickCard">
-                  <div class="card-header text-center">
-                    <h1><i class="bi bi-alarm-fill"></i></h1>
-                    Notices of Cancellation
-                  </div>
-                </article>
-                <article class="quickCard">
-                  <div class="card-header text-center">
-                    <h1><i class="bi bi-currency-exchange"></i></h1>
-                    Notices of Financed Prem.
-                  </div>
-                </article>
-              </div>
-              <!-- End Quick Access Links -->
-            </div>
-          </div>
-        </div>
-    </section>
-  </div>
 
     
 </main>
