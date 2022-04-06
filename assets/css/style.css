@@ -12,6 +12,17 @@
   margin-right: 10px;
 }
 
+.dashHeader {
+  background-color: white;
+  color: #072a48;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-radius: 0;
+  text-indent: 10px;
+  border-bottom: 5px solid #072a48;
+  
+}
+
 a {
  color: #072a48;
  font-weight: 500;
