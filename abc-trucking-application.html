@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="img/logo/logo.png" rel="icon">
+  <title>Southern Star MGA</title>
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/ruang-admin.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon">
+          <!-- <img src="img/logo/logo2.png"> -->
+        </div>
+        <div class="sidebar-brand-text mx-3">Southern Star MGA</div>
+      </a>
+      <hr class="sidebar-divider my-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span></a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+        Main Menu
+      </div>
+      <li class="nav-item">
+        <a class="nav-link" href="policies.html">
+          <i class="fas fa-fw fa-palette"></i>
+          <span>Policies</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseApps"
+          aria-expanded="true" aria-controls="collapseApps">
+          <i class="far fa-fw fa-window-maximize"></i>
+          <span>Applications</span>
+        </a>
+        <div id="collapseApps" class="collapse" aria-labelledby="headingApps" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Applications</h6>
+            <a class="collapse-item" href="#">New Application</a>
+            <a class="collapse-item" href="applications.html">View Applications</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEndo"
+          aria-expanded="true" aria-controls="collapseEndo">
+          <i class="far fa-fw fa-window-maximize"></i>
+          <span>Endorsements</span>
+        </a>
+        <div id="collapseEndo" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Endorsements</h6>
+            <a class="collapse-item" href="#">View Pending</a>
+            <a class="collapse-item" href="#">View Issued</a>
+            <div class="dropdown-divider"></div>
+            <a class="collapse-item" href="#">Add Driver</a>
+            <a class="collapse-item" href="#">Remove Driver</a>
+            <a class="collapse-item" href="#">Exclude Driver</a>
+            <div class="dropdown-divider"></div>
+            <a class="collapse-item" href="#">Add Unit</a>
+            <a class="collapse-item" href="#">Remove Unit</a>
+            <a class="collapse-item" href="#">Swap Units</a>
+            <a class="collapse-item" href="#">Adjust Radius</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseClaims"
+          aria-expanded="true" aria-controls="collapseClaims">
+          <i class="far fa-fw fa-window-maximize"></i>
+          <span>Claims</span>
+        </a>
+        <div id="collapseClaims" class="collapse" aria-labelledby="headingClaims" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Claims</h6>
+            <a class="collapse-item" href="#">New Claim</a>
+            <a class="collapse-item" href="#">View Open Claims</a>
+            <div class="dropdown-divider"></div>
+            <a class="collapse-item" href="#">View All Claims</a>
+          </div>
+        </div>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+        Your Shortcuts
+      </div>
+      <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Notification Center</span>
+        </a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="version">Version 1.0</div>
+    </ul>
+    <!-- Sidebar -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <!-- TopBar -->
+        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
+          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                aria-labelledby="searchDropdown">
+                <form class="navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-1 small" placeholder="What do you want to look for?"
+                      aria-label="Search" aria-describedby="basic-addon2" style="border-color: #3f51b5;">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">April 12, 2022</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-donate text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">April 11, 2022</div>
+                    You have 4 renewals due in less than 5 days.
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">April 11, 2022</div>
+                    You have 1 document request that is over 7 days old.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+              </div>
+            </li>
+            <!-- <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope fa-fw"></i>
+                <span class="badge badge-warning badge-counter">2</span>
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Message Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="img/man.png" style="max-width: 60px" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div class="font-weight-bold">
+                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been
+                      having.</div>
+                    <div class="small text-gray-500">Udin Cilok · 58m</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="img/girl.png" style="max-width: 60px" alt="">
+                    <div class="status-indicator bg-default"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">The reason I ask is because someone told me that people
+                      say this to all dogs, even if they aren't good...</div>
+                    <div class="small text-gray-500">Jaenab · 2w</div>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+              </div>
+            </li> -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-tasks fa-fw"></i>
+                <span class="badge badge-success badge-counter">3</span>
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  To Do List
+                </h6>
+                <a class="dropdown-item align-items-center" href="#">
+                  <div class="mb-3">
+                    <div class="small text-gray-500">Update Filing Forms
+                      <div class="small float-right"><b>50%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item align-items-center" href="#">
+                  <div class="mb-3">
+                    <div class="small text-gray-500">Drop Mail at USPS
+                      <div class="small float-right"><b>30%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item align-items-center" href="#">
+                  <div class="mb-3">
+                    <div class="small text-gray-500">Review Incoming Resumes
+                      <div class="small float-right"><b>75%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">View All Taks</a>
+              </div>
+            </li>
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile rounded-circle" src="img/boy.png" style="max-width: 60px">
+                <span class="ml-2 d-none d-lg-inline text-white small">Colt Schultz</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- Topbar -->
+
+        <!-- Container Fluid-->
+        <div class="container-fluid" id="container-wrapper">
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+              <h1 class="h3 mb-0 text-gray-800">Application for ABC Trucking (Unsubmitted)</h1>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Applications – ABC Trucking</li>
+              </ol>
+            </div>
+        <!-- Begin Driver Accordion -->
+        <div class="row">
+            
+        <div id="accordion" class="col-12 col-md-9 mb-4">
+            <div class="card mb-4">
+                <div class="card-header py-4 bg-success d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-white">Alert Center</h6>
+                </div>
+                <div class="card-body">
+                    There are no alerts to display at this time.
+                </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link h4" data-toggle="collapse" href="#collapseOne">
+                  Insured's Information
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <!-- Primary Information Table -->
+                    <table class="table table-striped mb-4">
+                        <thead>
+                          <tr>
+                            <th scope="col" colspan="2">Primary Information</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                                Proposed Effective Date
+                            </th>
+                            <td>
+                                <input type="date" class="form-control">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Named Insured:</th>
+                            <td>ABC Trucking</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Doing Business As (DBA):</th>
+                            <td>N/A</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">DOT:</th>
+                            <td>234567</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">MC</th>
+                            <td>123456789</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                Federal Tax ID:
+                            </th>
+                            <td>
+                                <input class="w-100 form-control mb-2" type="text">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Home State</th>
+                            <td>Texas</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!-- Secondary Information Table -->
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col" colspan="2">Secondary Information</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Address:</th>
+                            <td>TX</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Phone:</th>
+                            <td>210-555-5555</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Contact Name:</th>
+                            <td><a href="#">Elmer Fudd</a></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Contact Email:</th>
+                            <td><a href="#">e.fudd@abctrucking.com</a></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Safety Officer Name:</th>
+                            <td><a href="#">d.duck@abctrucking.com</a></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Safety Officer Email:</th>
+                            <td><a href="#">d.duck@abctrucking.com</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link h4" data-toggle="collapse" href="#collapseTwo">
+                  Power Unit List
+                </a>
+              </div>
+              <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  <!-- Add Power Unit Form -->
+                    <button data-toggle="collapse" class="btn btn-success mb-4" data-target="#addUnitForm">Add a Power Unit</button>
+                    <div class="card col-12 col-sm-3 collapse" id="addUnitForm">
+                    <div class="card-body">
+                        <table class="table table-striped table-sm">
+                            <tbody>
+                                <form>
+                                <tr>
+                                    <th scope="row">Make:</th>
+                                    <td><input type="text" class="driverForm" id="driverName" placeholder="First & Last Name"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Model:</th>
+                                    <td><input type="text" class="driverForm" id="driverDob" placeholder="MM/DD/YYYY"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Weight:</th>
+                                    <td><input type="text" class="driverForm" id="driverCountry" placeholder="US, Mexico, or Canada"></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row" colspan="2">
+                                        <button class="btn btn-success" type="button" id="driverSubmit">
+                                            Add This Unit
+                                        </button>
+                                    </th>
+                                </tr>
+                                </form>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                  <!-- Power Unit List Data Table -->
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">VIN</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Make</th>
+                        <th scope="col">Weight</th>
+                        <th scope="col">    </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>3WKYD49X1MF520473</td>
+                        <td>2021</td>
+                        <td>Kenworth</td>
+                        <td>> 45,000 lbs</td>
+                        <td><span class="button btn-danger small p-1">REMOVE</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>3WKYD49X1MF520474</td>
+                        <td>2022</td>
+                        <td>Kenworth</td>
+                        <td>> 45,000 lbs</td>
+                        <td><span class="button btn-danger small p-1">REMOVE</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link h4" data-toggle="collapse" href="#collapseThree">
+                  Driver List
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <!-- Add Driver Form -->
+                    <button data-toggle="collapse" class="btn btn-success mb-4" data-target="#addDriverForm">Add a Driver</button>
+                    <div class="card col-12 col-sm-3 collapse" id="addDriverForm">
+                    <div class="card-body">
+                        <table class="table table-striped table-sm">
+                            <tbody>
+                                <form>
+                                <tr>
+                                    <th scope="row">Name:</th>
+                                    <td><input type="text" class="driverForm" id="driverName" placeholder="First & Last Name"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">DOB:</th>
+                                    <td><input type="text" class="driverForm" id="driverDob" placeholder="MM/DD/YYYY"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Country:</th>
+                                    <td><input type="text" class="driverForm" id="driverCountry" placeholder="US, Mexico, or Canada"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">License State:</th>
+                                    <td><input type="text" class="driverForm" id="driverState" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">License Number:</th>
+                                    <td><input type="text" class="driverForm" id="driverLicenseNumber" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">NMP:</th>
+                                    <td><input type="text" class="driverForm" id="driverName" placeholder="If Applicable"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Copy of DL:</th>
+                                    <td>
+                                        <button class="btn btn-secondary addDriver" type="button" id="DLupload">
+                                            Upload License
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" colspan="2">
+
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th scope="row" colspan="2">
+                                        <button class="btn btn-success" type="button" id="driverSubmit">
+                                            Submit Driver
+                                        </button>
+                                    </th>
+                                </tr>
+                                </form>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                <!-- Drivers List Data Table -->
+                <table class="table table-striped table-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">License</th>
+                        <th scope="col">DOB</th>
+                        <th scope="col">View</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td><a href="driver-profile.html">Ricardo Lopez-Vera</a></td>
+                        <td>TX26508466</td>
+                        <td>07/01/1987</td>
+                        <td><span class="button btn-success small p-1">MVR</span> <span class="button btn-secondary small p-1">License</span> <span class="button btn-danger small p-1">REMOVE</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+      </div>
+
+            <div class="card">
+                <div class="card-header">
+                  <a class="collapsed card-link h4" data-toggle="collapse" href="#collapseFour">
+                    Questionnaire - General
+                  </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    <table class="table table-striped mb-4">
+                        <tbody>
+                          <tr>
+                            <th scope="row" width="40%">
+                                Organization Structure
+                            </th>
+                            <td>
+                                <select class="form-control">
+                                      <option>Choose One</option>
+                                      <option>S Corp</option>
+                                      <option>C Corp</option>
+                                      <option>Sole Proprietorship</option>
+                                      <option>Partnership</option>
+                                      <option>>LLC</option>               
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                Years in Business
+                            </th>
+                            <td>
+                                <input class="w-100 form-control mb-2" type="text">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                Has the insured ever filed for bankruptcy?
+                            </th>
+                            <td>
+                                    <input type="radio" class="d-inline">
+                                    <p class="d-inline pl-2 pr-4">Yes</p>
+                                    <input type="radio" class="d-inline">
+                                    <p class="d-inline pl-2">No</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                Has the insured ever operated under a different name? If yes, enter name(s):
+                            </th>
+                            <td>
+                                <input class="w-100 form-control mb-2" type="text">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                Does the insured have subsidiaries? If yes, describe:
+                            </th>
+                            <td>
+                                <input class="w-100 form-control mb-2" type="text">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                Description of operations:
+                            </th>
+                            <td>
+                                <textarea class="w-100 form-control" rows="3"></textarea>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                Carrier Type
+                            </th>
+                            <td>
+                                <select class="form-control">
+                                      <option>Choose One</option>
+                                      <option>Common Carrier</a>
+                                      <option>Contract Carrier</a>
+                                      <option>Private Carrier</a>
+                                      <option>Other</a>              
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                If contract carrier, with whom is the contract?
+                            </th>
+                            <td>
+                                <input class="w-100 form-control mb-2" type="text">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Garaging Location 1:</th>
+                            <td>
+                                <input class="w-100 form-control mb-2" type="text">
+                                <a href="#">+ Add Another Garaging Location</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                Latest DOT Rating:
+                            </th>
+                            <td>
+                                <input type="text" class="w-100 mb-2 form-control" rows=3 placeholder="Rating">
+                                <input class="w-100 form-control" type="text" placeholder="Last Year Rated (ex. 2020)">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                State Filings:
+                            </th>
+                            <td>
+                                    <input type="radio" class="d-inline">
+                                    <p class="d-inline pl-2 pr-4">Yes</p>
+                                    <input type="radio" class="d-inline">
+                                    <p class="d-inline pl-2">No</p>
+                                    <input class="w-100 form-control" type="text" placeholder="State Certificate Number(s)">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                Has the insured been cancelled by another carrier in the past 3 years? If yes, describe:
+                            </th>
+                            <td>
+                                    <input type="radio" class="d-inline">
+                                    <p class="d-inline pl-2 pr-4">Yes</p>
+                                    <input type="radio" class="d-inline">
+                                    <p class="d-inline pl-2">No</p>
+                                    <textarea class="w-100 form-control" rows="3" placeholder="Description"></textarea>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                Is the insured involved in any non-trucking business? If yes, describe:
+                            </th>
+                            <td>
+                                    <input type="radio" class="d-inline">
+                                    <p class="d-inline pl-2 pr-4">Yes</p>
+                                    <input type="radio" class="d-inline">
+                                    <p class="d-inline pl-2">No</p>
+                                    <textarea class="w-100 form-control" placeholder="Description" rows="3"></textarea>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Owner 1 Information:</th>
+                            <td>
+                                Name: <input class="w-100 form-control mb-2" type="text">
+                                Title: <input class="w-100 form-control mb-2" type="text">
+                                Ownership Percentage: <input class="w-100 mb-2 form-control" type="text">
+                                <a href="#">+ Add Another Owner</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                Radius of Operations:
+                            </th>
+                            <td>
+                                <input class="w-100 form-control mb-2" type="text">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                Radius by %:
+                            </th>
+                            <td>
+                                1-100 Miles: <input class="w-100 form-control" type="text" placeholder="0 - 100%">
+                                101-500 Miles: <input class="w-100 form-control" type="text" placeholder="0 - 100%">
+                                501-1000 Miles: <input class="w-100 form-control" type="text" placeholder="0 - 100%">
+                                1000+ Miles: <input class="w-100 form-control" type="text" placeholder="0 - 100%">
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                  <a class="collapsed card-link h4" data-toggle="collapse" href="#collapseFive">
+                    Questionnaire - Driver & Safety Practices
+                  </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                <table class="table table-striped mb-4">
+                    <tbody>
+                    <tr>
+                        <th scope="row">
+                            Does the insured hire drivers with less than 2 years CDL experience?
+                        </th>
+                        <td>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2 pr-4">Yes</p>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2">No</p>
+                            <p>Minimum Experience: <input class="w-100 form-control mb-2" type="text"></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            Does the insured drug test drivers prior to hiring them?
+                        </th>
+                        <td>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2 pr-4">Yes</p>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2">No</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            Does the insured randomly drug test drivers after hiring them?
+                        </th>
+                        <td>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2 pr-4">Yes</p>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2">No</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            Does the insured check the driver's MVR prior to hiring?
+                        </th>
+                        <td>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2 pr-4">Yes</p>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2">No</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            Does the insured check driver's medical certification prior to hiring?
+                        </th>
+                        <td>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2 pr-4">Yes</p>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2">No</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            Does the insured give driver's a road test prior to hiring?
+                        </th>
+                        <td>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2 pr-4">Yes</p>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2">No</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            Does the insured give the drivers a written test prior to hiring?
+                        </th>
+                        <td>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2 pr-4">Yes</p>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2">No</p>
+                        </td>
+                      </tr>
+                      <!-- Safety Program -->
+                      <tr>
+                        <th scope="row">
+                            Does the insured have an official written safety manual/program?
+                        </th>
+                        <td>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2 pr-4">Yes</p>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2">No</p>
+                            <textarea class="form-control mt-2" rows="3" placeholder="If yes, please describe."></textarea>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            Does the insured hold a regular safety meeting?
+                        </th>
+                        <td>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2 pr-4">Yes</p>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2">No</p>
+                            <input type="text" class="form-control mt-2" placeholder="If yes, how frequently?">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            Does the insured have a mandatory driver orientation program?
+                        </th>
+                        <td>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2 pr-4">Yes</p>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2">No</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            Does the insured offer driver incentives?
+                        </th>
+                        <td>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2 pr-4">Yes</p>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2">No</p>
+                            <textarea class="form-control mt-2" rows="3" placeholder="If yes, please describe."></textarea>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            Does the insured have a full time safety officer?
+                        </th>
+                        <td>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2 pr-4">Yes</p>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2">No</p>
+                            <input type="text" class="form-control mt-2" placeholder="Officer Name">
+                            <input type="text" class="form-control mt-2" placeholder="Years of Experience">
+                        </td>
+                      </tr>
+                </tbody>
+                </table>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                  <a class="collapsed card-link h4" data-toggle="collapse" href="#collapseSix">
+                    Questionnaire - Equipment
+                  </a>
+                </div>
+                <div id="collapseSix" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                <table class="table table-striped mb-4">
+                    <tbody>
+                        <tr><th scope="row" width="40%">Total Tractors:</th> <td><input class="w-100 form-control mb-2" type="text"></td></tr>
+                        <tr><th scope="row">Trucks Owned:</th> <td><input class="w-100 form-control mb-2" type="text"></td></tr>
+                        <tr><th scope="row">Total Heavy Trucks:</th> <td><input class="w-100 form-control mb-2" type="text"></td></tr>
+                        <tr><th scope="row">Heavy Trucks Owned:</th> <td><input class="w-100 form-control mb-2" type="text"></td></tr>
+                        <tr><th scope="row">Total Light Trucks/Vans:</th> <td><input class="w-100 form-control mb-2" type="text"></td></tr>
+                        <tr><th scope="row">Light Trucks/Vans Owned:</th> <td><input class="w-100 form-control mb-2" type="text"></td></tr>
+                        <tr><th scope="row">Total Service Units:</th> <td><input class="w-100 form-control mb-2" type="text"></td></tr>
+                        <tr><th scope="row">Service Units Owned:</th> <td><input class="w-100 form-control mb-2" type="text"></td></tr>
+                        <tr><th scope="row">Total Trailers:</th> <td><input class="w-100 form-control mb-2" type="text"></td></tr>
+                        <tr><th scope="row">Trailers Owned:</th> <td><input class="w-100 form-control mb-2" type="text"></td></tr>
+                        <tr><th scope="row">Total Spare Trailers:</th> <td><input class="w-100 form-control mb-2" type="text"></td></tr>
+                        <tr><th scope="row">Spare Trailers Owned:</th> <td><input class="w-100 form-control mb-2" type="text"></td></tr>
+                      <!-- Maintenance Program -->
+                      <tr>
+                        <th scope="row">
+                            Does the insured have an on-site repair shop?
+                        </th>
+                        <td>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2 pr-4">Yes</p>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2">No</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            What are the scope of repairs handled in house?
+                        </th>
+                        <td>
+                            <select class="form-control">
+                                  <option>Choose One</option>
+                                  <option>Minor Repairs</option>
+                                  <option>Major Repairs</option>
+                                  <option>Body Repairs Only</option>
+                                  <option>Other</option>             
+                            </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            Does the insured have regularly scheduled maintenance inspections?
+                        </th>
+                        <td>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2 pr-4">Yes</p>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2">No</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            Does the insured keep maintenance logs of each vehicle?
+                        </th>
+                        <td>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2 pr-4">Yes</p>
+                            <input type="radio" class="d-inline">
+                            <p class="d-inline pl-2">No</p>
+                            <input type="text" class="form-control mt-2" placeholder="Frequency">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                  <a class="collapsed card-link h4" data-toggle="collapse" href="#collapseSeven">
+                    Commodities
+                  </a>
+                </div>
+                <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum...
+                  </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                  <a class="collapsed card-link h4" data-toggle="collapse" href="#collapseSeven">
+                    Document Requests
+                  </a>
+                </div>
+                <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum...
+                  </div>
+                </div>
+            </div>
+
+        </div>
+     
+         
+          <!-- End Driver Accordion -->
+
+          <!-- Aside (Premium etc.) -->
+          <div class="col-12 col-md-3">
+             <!-- Premiums -->
+                <div class="card mb-4">
+                  <div class="card-header py-4 bg-primary d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-light">Premiums</h6>
+                  </div>
+                  <div>
+                    <div class="card-body">
+                        <!-- Premium Calculation Table -->
+                        <div class="row">
+                            <div class="col">
+                              GWP
+                            </div>
+                            <div class="col">
+                              $0.00
+                            </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                              Surplus Lines Tax
+                          </div>
+                          <div class="col">
+                              $0.00
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col">
+                              Stamping Fee
+                          </div>
+                          <div class="col">
+                              $0.00
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col">
+                              Processing Fee
+                          </div>
+                          <div class="col">
+                              $0.00
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col">
+                              Other Fees
+                          </div>
+                          <div class="col">
+                              $0.00
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col font-weight-bold">
+                              Total Due
+                          </div>
+                          <div class="col font-weight-bold">
+                              $0.00
+                          </div>
+                      </div>
+                        <!-- End Table -->
+                    </div>
+                    <div class="card-footer text-center">
+                      <a class="m-0 text-primary card-link" href="#">Adjust Debits/Credits <i
+                          class="fas fa-chevron-right"></i></a>
+                    </div>
+                  </div>
+              </div>
+              <!-- Premiums -->
+              <div class="card">
+                <div class="card-header py-4 bg-primary d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-light">Documents</h6>
+                </div>
+                <div>
+                  <div class="card-body list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Upload Loss Runs</a>
+                    <a href="#" class="list-group-item list-group-item-action">Upload Safer Report</a>
+                    <a href="#" class="list-group-item list-group-item-action">Upload CAB Report</a>
+                    <a href="#" class="list-group-item list-group-item-success">View IFTA</a>
+                    <a href="#" class="list-group-item list-group-item-success">View Driver List</a>
+                    <a href="#" class="list-group-item list-group-item-success">View Power Unit List</a>
+                    <a href="#" class="list-group-item list-group-item-action">Upload Loss Runs</a>
+                    <a href="#" class="list-group-item list-group-item-action">Upload Financials</a>
+                  </div>
+                  <div class="card-footer text-center">
+                    <a class="m-0 text-primary card-link" href="#">View/Upload Other Documents <i
+                        class="fas fa-chevron-right"></i></a>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          </div>
+          <!-- Modal Logout -->
+          <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelLogout"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabelLogout">Ohh No!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Are you sure you want to logout?</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                  <a href="login.html" class="btn btn-primary">Logout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!---Container Fluid-->
+      </div>
+      </div>
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>copyright &copy; <script> document.write(new Date().getFullYear()); </script> - developed by
+              <b><a href="https://www.southernstarmga.com" target="_blank">Southern Star MGA</a></b>
+            </span>
+          </div>
+        </div>
+
+      <!-- Footer -->
+    </div>
+  </div>
+
+  <!-- Scroll to top -->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/ruang-admin.min.js"></script>
+  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="js/demo/chart-area-demo.js"></script>  
+</body>
+
+</html>
